@@ -98,10 +98,6 @@ public class GerenciadorProdutos {
 
 
 
-                case "4":
-
-                    break;
-
                 case "x":
                     System.out.println("Finalizando o programa...");
                     estaAtivo = false;
