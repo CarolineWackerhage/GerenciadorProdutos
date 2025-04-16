@@ -97,6 +97,45 @@ public class GerenciadorProdutos {
                     break;
 
 
+                case "4":
+
+                    while (querContinuar) {
+
+                        if (listaProdutos.isEmpty()) {
+
+                            System.out.println("A lista de produtos está vazia.");
+
+                        } else {
+
+                            System.out.println("Itens na lista de produtos:");
+
+                            for (String produto : listaProdutos) {
+
+                                System.out.println("- " + produto);
+
+                            }
+
+                        }
+
+                        System.out.println("Deseja visualizar a lista novamente? s/n");
+
+                        entrada = s.nextLine();
+
+                        if (entrada.equalsIgnoreCase("s")) {
+
+                            querContinuar = true;
+
+                        } else {
+
+                            querContinuar = false;
+
+                        }
+
+                    }
+
+                    break;
+
+
 
                 case "x":
                     System.out.println("Finalizando o programa...");
